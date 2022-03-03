@@ -7,6 +7,8 @@
         {Name: "RADIO",Quantity:3},
         {Name: "TV",Quantity:1},
         {Name: "RADIO",Quantity:2},
+        {Name: "DVD",Quantity:4},
+        {Name: "CD",Quantity:4},
         {Name: "DVD",Quantity:4}
     ];
 
