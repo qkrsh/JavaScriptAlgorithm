@@ -1,0 +1,35 @@
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin: 30px 30px;
+    border-radius: 50%;
+    outline: none;
+    background-color: rgb(61, 111, 219);
+    font-size: 30px;
+    color: aliceblue;
+    border-color: rgb(61, 111, 219);
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: rgb(28, 75, 177);
+}
+
+button:active{
+    position: relative;
+    top:3px;
+    left: 3px;
+    transform: scale(0.8);
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
