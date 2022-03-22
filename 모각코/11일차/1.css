@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "MaruBuri-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body{
+      background-color:#aac8e9 ;
+  }
+  
+  .layout {
+    position: absolute;
+    left: 30%;
+    top: 150px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+  }
+  
+  .dog {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url("img/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+  
+  .dog_says {
+    width: 450px;
+    height: 120px;
+    text-align: center;
+    padding-top: 45px;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    font-family: "MaruBuri-Regular";
+  }
+  
+  .button {
+    width: 150px;
+    background: #76b3fa;
+    border-radius: 100px;
+    padding: 20px 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.45em;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  .input_style {
+    width: 312px;
+    height: 19px;
+    font-family: "MaruBuri-Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: gray;
+    border: none;
+    margin-top: 7px;
+    border: solid 2px #5f9be0;
+    border-radius: 3px;
+    margin: auto;
+  }
+  
+  body.visible{
+   background-color:#183553 ;
+  }
+
+ 
+  
+  .input_layout {
+    text-align: center;
+  }
