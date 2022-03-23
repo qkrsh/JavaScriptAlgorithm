@@ -10,13 +10,13 @@
       background-color:#aac8e9 ;
   }
   
+
   .layout {
-    position: absolute;
-    left: 30%;
-    top: 150px;
+   
     width: 500px;
     height: 500px;
     margin: auto;
+    margin-top: 150px;
   }
   
   .dog {
@@ -31,15 +31,23 @@
   }
   
   .dog_says {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 450px;
     height: 120px;
     text-align: center;
-    padding-top: 45px;
-    margin: auto;
     border-radius: 5px;
     border: solid 2px #000000;
     font-family: "MaruBuri-Regular";
+    color:white;
   }
+  
+  h2{
+    margin: 0;
+  }
+
+
   
   .button {
     width: 150px;
@@ -72,6 +80,7 @@
     border: solid 2px #5f9be0;
     border-radius: 3px;
     margin: auto;
+    outline: transparent;
   }
   
   body.visible{
@@ -82,4 +91,5 @@
   
   .input_layout {
     text-align: center;
+    
   }
