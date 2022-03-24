@@ -7,28 +7,32 @@ const hh=document.querySelector('h2');
 bt.addEventListener('click',()=>{
     if(cs.value=='불꺼줘'){
         hh.style.color="rgb(255,255,255)";
-        hh.innerHTML="불을 끕니다";
+        hh.innerHTML="불을 끕니다 왈왈";
         bd.classList.add('visible');
         cs.value='';
     }
     else if(cs.value=='불켜줘'){
         hh.style.color="rgb(255,255,255)";
 
-        hh.innerHTML="불을 켭니다";
+        hh.innerHTML="불을 켭니다 왈왈";
         bd.classList.remove('visible');
         cs.value='';
     }
-    else if(cs.value=='노래불러줘'){
-        hh.innerHTML="니냐니노니녀닌닌니나누나누냐니노니냐니노아아아다시그때로~~니냐니노니냐노닌";
+    else if(cs.value=='노래해줘'){
+        hh.innerHTML="숄라숄라나나나나나ㄴ나는박하루라네하하하하이에에에엥누누나나나나~~니니닌~~~뉴뇬뇨노뇨~~노래부르네~~~이렇게!!!하하하~~~~노래는 즐거워이에에에엥누누나나나나~~니니닌~~~뉴뇬뇨노";
       
         let as= setInterval(function(){
         var a=Math.round(Math.random()*255);
         var b=Math.round(Math.random()*255);
         var c=Math.round(Math.random()*255);
         hh.style.color = "rgb(" + a + "," + b + "," + c + ")";
-        },500)
+        bd.style.backgroundColor="rgb(" + c + "," + a + "," + b + ")";
+        },300)
         let st= setTimeout(function(){
             clearInterval(as)
+            hh.innerHTML="여기까지ㅎㅎ"
+            hh.style.color = "rgb(" + 255 + "," + 255 + "," + 255 + ")";
+            bd.style.backgroundColor="rgb(" + 170 + "," + 200 + "," + 233 + ")";
             },5000)
         cs.value='';
     }
@@ -45,11 +49,19 @@ bt.addEventListener('click',()=>{
             },5000)
         cs.value='';
     }
-    else if('경고'){
+    else if(cs.value==''){
+        var bb=cs.value;
         hh.style.color="rgb(255,255,255)";
-        hh.innerHTML="왈왈~";
-        alert("못알아듣겠어유,,");
+        hh.innerHTML=bb+"말을 하세유,,,,~_~";
+        cs.value='';
+    }
+    else{
+        var bb=cs.value;
+        hh.style.color="rgb(255,255,255)";
+        hh.innerHTML=bb+"이 뭔지 못알아듣겠어유,,,,~_~";
         cs.value='';
     }
 })
+
+
 
