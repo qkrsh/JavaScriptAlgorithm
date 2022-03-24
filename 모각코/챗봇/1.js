@@ -3,6 +3,9 @@ let cs = document.querySelector('#console');
 const bt= document.querySelector('.button');
 const bd=document.querySelector('body');
 const hh=document.querySelector('h2');
+var nar = document.getElementById("typed");
+
+
 
 bt.addEventListener('click',()=>{
     if(cs.value=='불꺼줘'){
@@ -60,8 +63,18 @@ bt.addEventListener('click',()=>{
         hh.style.color="rgb(255,255,255)";
         hh.innerHTML=bb+"이 뭔지 못알아듣겠어유,,,,~_~";
         cs.value='';
+        var typewriter = new Typewriter(nar, {
+            loop: true
+        });
+
+        typewriter
+            .typeString("알아듣게 얘기해봐유,,")
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString("모르겠으면 밑에 help에 손 올려봐유,,")
+            .pauseFor(3000)
+            .start();
+        
     }
 })
-
-
 
