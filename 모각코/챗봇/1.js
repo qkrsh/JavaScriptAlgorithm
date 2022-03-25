@@ -57,6 +57,17 @@ bt.addEventListener('click',()=>{
         hh.style.color="rgb(255,255,255)";
         hh.innerHTML=bb+"말을 하세유,,,,~_~";
         cs.value='';
+        var typewriter = new Typewriter(nar, {
+            loop: true
+        });
+
+        typewriter
+            .typeString("말을 하셔유,,,")
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString("모르겠으면 밑에 help에 손 올려봐유,,")
+            .pauseFor(3000)
+            .start();
     }
     else{
         var bb=cs.value;
